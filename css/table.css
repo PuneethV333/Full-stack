@@ -1,0 +1,17 @@
+/* 1 */
+/* td,th{
+    padding: 5px;
+}
+table{
+    padding: 2px;
+    border: 2px outset black;   
+    background-color: lightblue;
+} */
+/* 2 */
+table tbody tr:first-child th:last-child {
+    padding: 10px 15px;
+}
+
+th,td{
+    padding: 2px;
+}
