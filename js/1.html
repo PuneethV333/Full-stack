@@ -1,0 +1,21 @@
+lick="func1()">click here</button>
+    <button ondblclick="func2()">click here</button>
+    <button onmouseover="func3()" onmouseleave="func4()">click here</button>
+    <script>
+        const btns = document.getElementsByTagName("button");
+
+        const func1 = () =>{
+            btns[0].innerHTML = 'clicked'
+        }
+        const func2 = () =>{
+            btns[1].innerHTML = 'bdlclicked'
+        }
+        const func3 = () =>{
+            btns[2].innerHTML = 'mouse over'
+        }
+        const func4 = () =>{
+            btns[2].innerHTML = 'click here'
+        }
+    </script>
+</body>
+</html>

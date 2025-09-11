@@ -1,0 +1,30 @@
+<textarea id="editor" style="width:100%; height:90vh;"></textarea>
+<button onclick="saveFile()">Save</button>
+
+<script>
+function saveFile() {
+  const text = document.getElementById("editor").value;
+
+
+  let type = prompt("Enter file type (e.g., txt, html, js, css):", "txt");
+  if (!type) type = "txt"; 
+
+  let mimeTypes = {
+    txt: "text/plain",
+    html: "text/html",
+    js: "text/javascript",
+    css: "text/css",
+    json: "application/json"
+  };
+  const blob = new Blob([text], { type: mimeTypes[type] || "text/plain" });
+
+
+  let filename = prompt("Enter file name (without extension):", "file");
+  if (!filename) filename = "file";
+
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `${filename}.${type}`;
+  link.click();
+}
+</script>

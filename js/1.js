@@ -1,10 +1,10 @@
-const refHellobtn = document.querySelector("#hellobtn");
-const refH1 = document.querySelector("h1");
+// const refHellobtn = document.querySelector("#hellobtn");
+// const refH1 = document.querySelector("h1");
 
 
-const helloFn = () => {
-    refH1.textContent = "Hello world";
-}
+// const helloFn = () => {
+//     refH1.textContent = "Hello world";
+// }
 
 
-refHellobtn.addEventListener("click",helloFn);
+// refHellobtn.addEventListener("click",helloFn);
